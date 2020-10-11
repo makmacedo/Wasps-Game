@@ -7,7 +7,7 @@
 - The game ends when there are no wasps left.
 
 ## ⚙ Config
-Its possible to config wasp types, numbers, life and damage throug the `nest_config` variable
+Its possible to config wasp types, numbers, life and damage throug the `config.json` file
 
 ## ✔ Tests
 There are some tests to assure the right functionality of the game core, due to CORS policy in browser, the `test.js` need to imported via `HTTP` protocol so a local server is recommended! 
