@@ -4,6 +4,19 @@
     background-image: url("honeycomb-pattern.jpg");
     background-repeat: repeat, repeat;
 }
+#nest {
+    margin: auto;
+    max-width: 870px;
+}
+h1 {
+    background: -webkit-linear-gradient(#ff7300, #ff4500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    text-align: center;
+}
+
+/* butons start game, strike and test */
 .controlls {
     display: flex;
     justify-content: center;
@@ -33,18 +46,7 @@
     opacity: 100%;
 }
 
-h1 {
-    background: -webkit-linear-gradient(#ff7300, #ff4500);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 70px;
-    text-align: center;
-}
-#nest {
-    margin: auto;
-    max-width: 870px;
-}
-
+/* Wasp elements styling */
 .wasp {
     display: inline-block;
     margin: 10px;
@@ -69,6 +71,8 @@ h1 {
 .wasp.dead img {
     filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(500%) contrast(0.8);
 }
+
+/* Wasp health points */
 .wasp .hp {
     display: block;
     margin-bottom: 15px;
@@ -127,6 +131,7 @@ h1 {
     background-color: darkgreen;
 }
 
+/* Pontuation score */
 #score {
     color: #ff4500;
 }
@@ -134,7 +139,7 @@ h1 {
     content: 'Score: ';
 }
 
-
+/* Winner Banner */
 #winner {
     position: absolute;
     max-width: 870px;
