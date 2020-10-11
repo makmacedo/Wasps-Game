@@ -1,0 +1,161 @@
+#app {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    background-image: url("honeycomb-pattern.jpg");
+    background-repeat: repeat, repeat;
+}
+.controlls {
+    display: flex;
+    justify-content: center;
+}
+#app button {
+    margin: 20px;
+    background-color:#ff7300;
+    border: 2px solid #ff4500;
+    color: #fff;
+    padding: 10px;
+}
+#app button:hover {
+    background: #ffa500;
+}
+#app button:disabled {
+    color: #aaaaaa;
+    background-color: #ad722e;
+    border: 2px solid #9c5a41;
+}
+#test {
+    opacity: 40%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+#test:hover {
+    opacity: 100%;
+}
+
+h1 {
+    background: -webkit-linear-gradient(#ff7300, #ff4500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    text-align: center;
+}
+#nest {
+    margin: auto;
+    max-width: 870px;
+}
+
+.wasp {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    width: 102px;
+}
+.wasp p {
+    text-transform: capitalize;
+    text-align: center;
+}
+.wasp.selected {
+    outline: 4px solid #ffa500;
+}
+.wasp img {
+    filter: drop-shadow(5px 5px 5px #222);
+    display:block;
+    margin:auto;
+}
+.wasp.dead {
+    color: red
+}
+.wasp.dead img {
+    filter: grayscale(100%) brightness(50%) sepia(100%) hue-rotate(-50deg) saturate(500%) contrast(0.8);
+}
+.wasp .hp {
+    display: block;
+    margin-bottom: 15px;
+    height: 5px;
+    width: 100px;
+    background-color: #333;
+    border: 1px solid #000;
+}
+.wasp .hp span {
+    position: absolute;
+    height: 5px;
+    width: 100px;
+    background-color: green;
+}
+.wasp .hp span.hp_0 {
+    width: 0px;
+}
+.wasp .hp span.hp_10 {
+    width: 10px;
+    background-color: red;
+}
+.wasp .hp span.hp_20 {
+    width: 20px;
+    background-color: red;
+}
+.wasp .hp span.hp_30 {
+    width: 30px;
+    background-color: red;
+}
+.wasp .hp span.hp_40 {
+    width: 40px;
+    background-color: orange;
+}
+.wasp .hp span.hp_50 {
+    width: 50px;
+    background-color: orange;
+}
+.wasp .hp span.hp_60 {
+    width: 60px;
+    background-color: yellow;
+}
+.wasp .hp span.hp_70 {
+    width: 70px;
+    background-color: yellow;
+}
+.wasp .hp span.hp_80 {
+    width: 80px;
+    background-color: green;
+}
+.wasp .hp span.hp_90 {
+    width: 90px;
+    background-color: green;
+}
+.wasp .hp span.hp_100 {
+    width: 100px;
+    background-color: darkgreen;
+}
+
+#score {
+    color: #ff4500;
+}
+#score::before {
+    content: 'Score: ';
+}
+
+
+#winner {
+    position: absolute;
+    max-width: 870px;
+    top: 70vh;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffa500;
+    border: 2px solid #ff4500;
+}
+#winner h2 {
+    margin: 0 20px;
+    color: #ffd000;
+}
+#winner button {
+    margin-left: auto;
+}

@@ -1,4 +1,6 @@
 export var test = function() {
+    var nest_config = []
+    fetch('config.json').then(r => r.json()).then(conf => nest_config = conf.wasps);
 
     var test_results = {
         tests: 0,
@@ -7,29 +9,9 @@ export var test = function() {
         assertions: 0,
         errors: []
     }
-    var nest_config = [
-        {
-            type: 'queen',
-            quantity: 1,
-            hp: 80,
-            damage: 7
-        },
-        {
-            type: 'worker',
-            quantity: 5,
-            hp: 68,
-            damage: 10
-        },
-        {
-            type: 'drone',
-            quantity: 8,
-            hp: 60,
-            damage: 12
-        }
-    ]
 
- 
-    
+
+
     /**
      * @test - check all elements are present
      * 
@@ -45,7 +27,7 @@ export var test = function() {
             let wasp_element = document.getElementById(`${wasp_config.type}_${i+ 1}`)
             test_results.assertions++
 
-            if (!wasp_element.innerText.includes(wasp_name)) {
+            if (!wasp_element.innerText.toLowerCase().includes(wasp_name)) {
                 success = false;
                 test_results.errors.push(`failed to assert text ${wasp_name} was present in element ${wasp_element.innerHTML}`)
             }

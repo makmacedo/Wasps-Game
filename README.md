@@ -17,4 +17,4 @@ Tests results will be printed in the console. :computer:
 -----
 
 ### :warning: Don't actually kill wasps :bee: 
-wasps are very important to our ecosystems, having a crucial role in the pollination of flowers and fruits! They also can also fight back! soo leave the wasps alone!
+wasps are very important to our ecosystems, having a crucial role in the pollination of flowers and fruit trees! They can also fight back! soo leave the wasps alone!

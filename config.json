@@ -1,0 +1,22 @@
+{
+    "wasps": [
+        {
+            "type": "queen",
+            "quantity": 1,
+            "hp": 80,
+            "damage": 7
+        },
+        {
+            "type": "worker",
+            "quantity": 5,
+            "hp": 68,
+            "damage": 10
+        },
+        {
+            "type": "drone",
+            "quantity": 8,
+            "hp": 60,
+            "damage": 12
+        }
+    ]
+}
